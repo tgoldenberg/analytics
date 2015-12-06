@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @customer.device %>
+</p>
+
+<p>
+  <strong>Joined on:</strong>
+  <%= @customer.joined_on %>
+</p>
+
+<p>
+  <strong>Last seen:</strong>
+  <%= @customer.last_seen %>
+</p>
+
+<p>
+  <strong>Times used:</strong>
+  <%= @customer.times_used %>
+</p>
+
+<p>
+  <strong>Days used:</strong>
+  <%= @customer.days_used %>
+</p>
+
+<p>
+  <strong>Chapters read:</strong>
+  <%= @customer.chapters_read %>
+</p>
+
+<p>
+  <strong>Fb shares:</strong>
+  <%= @customer.fb_shares %>
+</p>
+
+<p>
+  <strong>Email shares:</strong>
+  <%= @customer.email_shares %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
